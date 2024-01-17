@@ -42,7 +42,8 @@ class Footer extends React.Component {
       <div class="container text-center">
         <br></br>
     © Кафедра КБ-2 "Информационно-аналитические системы кибербезопасности", 2024
-
+        <br></br>
+        <br></br>
       </div>
   </footer>
   }
@@ -124,8 +125,8 @@ class QuizForm extends React.Component {
     {
       return ( 
         <div class="container text-center">
-        <p>{this.resultCounter()}%<br></br>
-        настолько вам подходит специальность "Информационно-аналитические системы безопасности"<br></br>
+        <p><h1 class="display-1">{this.resultCounter()}%</h1><br></br>
+        <span class="fs-5"> настолько вам подходит специальность "Информационно-аналитические системы безопасности"</span><br></br><br></br>
         <button type="button" class="btn btn-outline-light btn-lg" onClick = {this.onClickAgain.bind(this)}>Пройти тест снова</button> 
         </p>
       </div> 
@@ -134,13 +135,18 @@ class QuizForm extends React.Component {
     else
     {
       return ( <div class="container text-center">
-                <p>
-                    <b>{this.props.questions[this.question_id]}</b>   
-                    <br></br>               
-                    <button type="button" class="btn btn-outline-light" onClick = {this.onClickYes.bind(this)}>Да</button> 
-                    <button type="button" class="btn btn-outline-light" onClick = {this.onClickNo.bind(this)}>Нет</button> 
+                <div class="container">
                     <br></br>
-                </p>
+                    <div class="row"><div class="col">  <p class="fs-5 font-monospace"><b>{this.props.questions[this.question_id]}</b></p>  </div></div>
+                    <br></br>   
+                    <div class="row">   
+                      <div class="col"></div>       
+                      <div class="col"><button type="button" class="btn btn-outline-light btn-lg" onClick = {this.onClickYes.bind(this)}> <span class="fs-5 font-monospace">Да</span> </button> </div>
+                      <div class="col"><button type="button" class="btn btn-outline-light btn-lg" onClick = {this.onClickNo.bind(this)}> <span class="fs-5 font-monospace">Нет</span> </button> </div>
+                      <div class="col"></div> 
+                    </div> 
+                    <div class="row"><br></br></div> 
+                </div>
             </div> ) 
       }
   }
