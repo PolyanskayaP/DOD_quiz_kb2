@@ -11,7 +11,7 @@ class Carousel1 extends React.Component {
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./public/343.jpg" class="d-block w-100" alt="..."></img>
+      <img src="./public/343.jpeg" class="d-block w-100" alt="..."></img>
     </div>
     <div class="carousel-item">
       <img src="./public/34_1.jpg" class="d-block w-100" alt="..."></img>
