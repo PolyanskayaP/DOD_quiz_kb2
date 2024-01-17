@@ -41,7 +41,7 @@ class Footer extends React.Component {
     return <footer class="footer">
       <div class="container text-center">
         <br></br>
-    © Кафедра КБ-2 "Информационно-аналитические системы кибербезопасности", 2024
+    © 2024, Кафедра КБ-2 "Информационно-аналитические системы кибербезопасности"
         <br></br>
         <br></br>
       </div>
