@@ -2,6 +2,7 @@
     "name": "reduxapp",
     "description": "A React.js project using Redux",
     "version": "1.0.0",
+    "homepage": "https://polyanskayap.github.io/DOD_quiz_kb2/",
     "author": "metanit.com",
     "scripts": {
         "dev": "webpack serve",
