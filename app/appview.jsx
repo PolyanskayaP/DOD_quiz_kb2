@@ -38,14 +38,11 @@ class Footer extends React.Component {
     super(props);
   }
   render() { 
-    return <footer class="footer">
-      <div class="container text-center">
-        <br></br>
-    © 2024, Кафедра КБ-2 "Информационно-аналитические системы кибербезопасности"
-        <br></br>
-        <br></br>
-      </div>
-  </footer>
+    return <footer class="footer mt-auto py-3 ">
+        <div class="container text-center">
+          <span>© 2024, Кафедра КБ-2 "Информационно-аналитические системы кибербезопасности"</span>
+        </div>
+      </footer>
   }
 }
 
@@ -70,11 +67,11 @@ class NavbarReact extends React.Component {
     super(props);
   }
   render() { 
-    return <nav class="navbar bg-body-tertiary">
+    return <nav class="navbar ">
     <div class="container">
       <a class="navbar-brand" href="#">
-      <img src="./public/yozh.svg" alt="Bootstrap" width="30" height="24"></img>
-        10.05.04 
+      <img src="./public/yozh_white.svg" alt="Bootstrap" width="30" height="24"></img>
+         
       </a>
     </div>
   </nav>
