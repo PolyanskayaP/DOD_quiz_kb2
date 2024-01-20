@@ -1,7 +1,7 @@
 const path = require("path");
    
 module.exports = {
-    mode: "production",
+    mode: "development",
     entry: "./app/app.jsx", // входная точка - исходный файл
     output:{
         path: path.resolve(__dirname, "./public"),     // путь к каталогу выходных файлов - папка public
