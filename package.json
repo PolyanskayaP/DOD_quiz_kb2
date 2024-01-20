@@ -3,8 +3,6 @@
     "description": "A React.js project using Redux",
     "version": "1.0.0",
     "homepage": "https://polyanskayap.github.io/DOD_quiz_kb2/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "author": "metanit.com",
     "scripts": {
         "dev": "webpack serve",
