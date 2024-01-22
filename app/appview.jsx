@@ -2,12 +2,50 @@ const React = require("react");
 const connect = require("react-redux").connect;
 const actions = require("./actions.jsx");
 
-class Carousel1 extends React.Component {
+class IkbLogo extends React.Component {
   constructor(props) {
     super(props);
   }
   render() { 
     return <div class="container text-center">
+      <br></br>
+      <img width={450} src="./public/KBSP colour white.svg"></img>
+      <br></br><br></br><br></br>
+    </div>
+  }
+}
+
+class OfficialLink extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() { 
+    return <div class="container">
+      Больше информации на <a class="navbar-brand under" target="_blank" href="https://www.mirea.ru/education/the-institutes-and-faculties/institut-kiberbezopasnosti-i-tsifrovykh-tekhnologiy/training-programs/spetsialitet/10-05-04-information-analytical-system-security/?ysclid=lrmlsb46vw605343380">официальном сайте РТУ МИРЭА</a>      
+    </div>
+  }
+}
+
+class FAQ_Component extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() { 
+    return <div id="ques" class="container ">
+    <div class="row row-cols-1">
+      <div class="col">❔Какой проходной балл был в 2023?</div>
+      <div class="col">💡240</div>
+    </div>
+  </div>
+  }
+}  
+
+class Carousel1 extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() { 
+    return <div id="foto" class="container text-center">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -41,6 +79,7 @@ class Footer extends React.Component {
     return <footer class="footer mt-auto py-3 ">
         <div class="container text-center">
           <span>© 2024, Кафедра КБ-2 "Информационно-аналитические системы кибербезопасности"</span>
+          <OfficialLink />
         </div>
       </footer>
   }
@@ -54,7 +93,7 @@ class BeginText extends React.Component {
     return <div class="container text-center">
       <p>
       <br></br>
-      <h1 class="display-5">
+      <h1 id="test" class="display-5">
         Насколько вам подходит специальность 10.05.04 "Информационно-аналитические системы безопасности?"
       </h1>
       </p>
@@ -73,6 +112,7 @@ class NavbarReact extends React.Component {
       <img src="./public/yozh_white.svg" alt="Bootstrap" width="30" height="24"></img>
          
       </a>
+      
     </div>
   </nav>
   }
@@ -112,8 +152,9 @@ class QuizForm extends React.Component {
     if (this.state.isFirst) {
      {
         return ( <div class="container text-center">
-          <p>             
-              <button type="button" class="btn btn-outline-light btn-lg" onClick = {this.onClickFirst.bind(this)}>Пройдите тест</button> 
+          <p>      
+              <br></br>       
+              <button type="button" class="btn btn-outline-light btn-lg sqbutt" onClick = {this.onClickFirst.bind(this)}>Пройдите тест</button> 
           </p>
       </div> ) 
       }
@@ -123,7 +164,7 @@ class QuizForm extends React.Component {
       return ( 
         <div class="container text-center">
         <p><h1 class="display-1">{this.resultCounter()}%</h1><br></br>
-        <span class="fs-5"> настолько вам подходит специальность "Информационно-аналитические системы безопасности"</span><br></br><br></br>
+        
         <button type="button" class="btn btn-outline-light btn-lg" onClick = {this.onClickAgain.bind(this)}>Пройти тест снова</button> 
         </p>
       </div> 
@@ -156,7 +197,9 @@ class AppView extends React.Component {
             <NavbarReact />
             <BeginText />
             <QuizForm {...this.props} />
+            <IkbLogo/>
             <Carousel1 />
+            
             <Footer />
     </div>
   }

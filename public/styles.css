@@ -3,10 +3,10 @@ body{
     color:aliceblue;
   }
 .navbar {
-  
-   /* -webkit-box-shadow: 0 8px 6px -6px #2dbee2;
-    -moz-box-shadow: 0 8px 6px -6px #2dbee2;
-    box-shadow: 0 8px 6px -6px #2dbee2; */
+  background-color: #15394b;
+   /* -webkit-box-shadow: 0 1px 0px 0px aliceblue;
+    -moz-box-shadow: 0 1px 0px 0px aliceblue;
+    box-shadow: 0 1px 0px 0px aliceblue; */
     /* the rest of your styling */
 }
 .navbar-brand {
@@ -14,4 +14,14 @@ body{
 }
 .navbar-brand:hover {
   color: aliceblue;
+}
+.navbar-brand:visited {
+  color: aliceblue;
+}
+.under {
+  text-decoration: underline;
+}
+.sqbutt {
+  height:120px;
+  width:120px;
 }
