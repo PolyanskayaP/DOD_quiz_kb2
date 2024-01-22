@@ -7,7 +7,7 @@ class IkbLogo extends React.Component {
     super(props);
   }
   render() { 
-    return <div class="container text-center">
+    return <div class="container d-none d-lg-block text-center">
       <br></br>
       <img width={450} src="./public/KBSP colour white.svg"></img>
       <br></br><br></br><br></br>
