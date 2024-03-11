@@ -198,7 +198,7 @@ class AppView extends React.Component {
             <BeginText />
             <QuizForm {...this.props} />
             <IkbLogo/>
-            <Carousel1 />
+            
             
             <Footer />
     </div>
